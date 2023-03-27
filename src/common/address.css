@@ -1,0 +1,20 @@
+.address-container {
+  height: 140px;
+  background-color: rgb(234, 222, 215);
+  width: 99vw;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(69, 50, 39);
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 20px; */
+}
+.address-container a {
+  color: #453227;
+  padding-left: 120px;
+}
+.slash {
+  padding-left: 8px;
+  padding-right: 8px;
+}

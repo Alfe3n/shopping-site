@@ -1,0 +1,54 @@
+.filter-container {
+  margin-top: 14px;
+  padding-left: 50px;
+}
+
+.search {
+  background-color: rgb(241, 245, 248);
+  border-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.category-container ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.category-container li {
+  list-style: none;
+  line-height: 30px;
+  color: rgb(97, 125, 152);
+}
+.filter-container button {
+  background-color: rgb(187, 37, 37);
+  border-radius: 4px;
+  padding: 7px 7px;
+  margin-top: 20px;
+  border-style: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.filter-container h4 {
+  color: rgb(16, 42, 66);
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  letter-spacing: 1.6px;
+}
+.Company-container label {
+  display: block;
+}
+.shipping-container label {
+  padding-right: 50px;
+}
+select.company {
+  background-color: rgb(241, 245, 248);
+  border-radius: 4px;
+}
+select.company option {
+  background-color: rgb(241, 245, 248);
+}

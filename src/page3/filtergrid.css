@@ -1,0 +1,6 @@
+.filtergrid-container {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 15px; */
+  margin-top: 50px;
+}

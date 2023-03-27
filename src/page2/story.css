@@ -1,0 +1,36 @@
+.story-container {
+  display: flex;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  column-gap: 5vw;
+  /* background-color: aqua; */
+  justify-content: flex-start;
+}
+
+.image-container {
+  /* flex: 1; */
+}
+.image-container img {
+  border-radius: 10px;
+}
+
+.content-container {
+  color: rgb(97, 125, 152);
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 720px;
+  /* flex: 1; */
+  /* background-color: azure; */
+}
+.content-container h2 {
+  font-size: 40px;
+  color: rgb(16, 42, 66);
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.content-container h2 span {
+  border-bottom: 4px solid #ab7a5f;
+}
