@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./p4.css";
 import { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import Navbar from "../common/navbar";
 import Footer from "../common/footer";
 import Address from "../common/address";
 import { data } from "../data";
+// import Cartcontents from "../page5/cartcontents";
+import { useStateContext } from "../contexts/ContextProvider";
 export function Page4() {
   let { id } = useParams();
-  let item = {};
+
+  const { cart, setCart } = useStateContext();
+
+  const navigate = useNavigate();
+
+  const [item, setItem] = useState({});
   const [count, setCount] = useState(1);
   function incrementCount() {
     if (count != 10) setCount(count + 1);
@@ -17,11 +24,20 @@ export function Page4() {
     if (count != 1) setCount(count - 1);
   }
 
-  const result = data.filter((product) => {
-    return product.id === id;
-  });
-  item = result[0];
+  useEffect(() => {
+    const result = data.filter((product) => {
+      return product.id === id;
+    });
 
+    setItem(result[0]);
+  }, []);
+
+  function addToCart() {
+    item.count = count;
+    const newCart = [...cart, item];
+    setCart(newCart);
+    navigate("/cart");
+  }
   return (
     <div>
       <Navbar />
@@ -58,9 +74,9 @@ export function Page4() {
             <h1>{count}</h1>
             <button onClick={incrementCount}>+</button>
           </div>
-          <Link to="/cart">
-            <button className="addToCart">ADD TO CART</button>
-          </Link>
+          <button className="addToCart" onClick={addToCart}>
+            ADD TO CART
+          </button>
         </div>
       </div>
       <Footer />

@@ -1,0 +1,45 @@
+.cart-contents-container {
+  margin-top: 80px;
+  display: flex;
+  /* justify-content: ; */
+}
+.cart-heading {
+  display: flex;
+  align-items: center;
+}
+.cart-heading .item-heading {
+  margin-right: 200px;
+}
+.cart-heading .heading {
+  margin-right: 80px;
+}
+.cart-items {
+  display: flex;
+  align-items: center;
+}
+.item-name-img {
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.item-name-img img {
+  width: 100px;
+  object-fit: cover;
+}
+.price-value {
+  margin-right: 80px;
+}
+.count-value {
+  display: flex;
+  margin-right: 80px;
+
+  align-items: center;
+}
+.count-value button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background-color: white;
+  border-style: none;
+}
