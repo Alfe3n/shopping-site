@@ -21,6 +21,10 @@
   font-size: 16px;
   line-height: 32px;
   max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   /* flex: 1; */
   /* background-color: azure; */
 }
@@ -33,4 +37,10 @@
 }
 .content-container h2 span {
   border-bottom: 4px solid #ab7a5f;
+}
+@media only screen and (max-width: 934px) {
+  .story-container {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 }

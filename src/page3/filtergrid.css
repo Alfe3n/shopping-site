@@ -1,6 +1,11 @@
 .filtergrid-container {
   display: flex;
   justify-content: center;
-  /* padding-top: 15px; */
   margin-top: 50px;
+}
+@media only screen and (max-width: 995px) {
+  .filtergrid-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

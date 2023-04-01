@@ -30,10 +30,12 @@ function navbar() {
         </div>
         <div className="nav-right">
           <div className="cart">
-            <Link to="/cart">
+            <a href="/cart">
               <span> Cart</span>
+            </a>
+            <a href="/cart">
               <img src={cart}></img>
-            </Link>
+            </a>
           </div>
           <div className="login">
             <span>Login</span>
